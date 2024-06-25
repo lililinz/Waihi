@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:2193','+proj=tmerc +lat_0=0 +lon_0=173 +k=0.9996 +x_0=1600000 +y_0=10000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs');</script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/nzprimarylandparcels_2.js"></script><script src="layers/nzprimarylandparcels_3.js"></script><script src="layers/nzprimarylandparcels_4.js"></script><script src="layers/nzaddresses_5.js"></script><script src="layers/nzaddresses_6.js"></script><script src="layers/nzaddresses_7.js"></script><script src="layers/OBSPlanBoundary_8.js"></script><script src="layers/Combined_Communication_Cable_9.js"></script><script src="layers/Combined_HV_Cable_GPS_10.js"></script><script src="layers/Combined_HV_Underground_Cable_11.js"></script><script src="layers/Combined_LV_Cable_Other_GPS_12.js"></script><script src="layers/Combined_LV_Distribution_Cable_GPS_13.js"></script><script src="layers/Combined_LV_Service_Cable_GPS_14.js"></script><script src="layers/Combined_LV_Underground_Cable_15.js"></script><script src="layers/Combined_SubTrans_Cable_GPS_16.js"></script><script src="layers/Combined_Distribution_Box_GPS_17.js"></script><script src="layers/Combined_Poles_18.js"></script><script src="layers/Combined_Transformer_GPS_19.js"></script><script src="layers/Water_Supply_Pipe_20.js"></script><script src="layers/One_NZ_Undergound_Service_21.js"></script><script src="layers/TuatahiFirstFibre_22.js"></script><script src="layers/ChorusUndergroundDuct_23.js"></script><script src="layers/WaihiTaurangaBuildsections_NZTM_24.js"></script>
+        <script src="styles/nzprimarylandparcels_2_style.js"></script><script src="styles/nzprimarylandparcels_3_style.js"></script><script src="styles/nzprimarylandparcels_4_style.js"></script><script src="styles/nzaddresses_5_style.js"></script><script src="styles/nzaddresses_6_style.js"></script><script src="styles/nzaddresses_7_style.js"></script><script src="styles/OBSPlanBoundary_8_style.js"></script><script src="styles/Combined_Communication_Cable_9_style.js"></script><script src="styles/Combined_HV_Cable_GPS_10_style.js"></script><script src="styles/Combined_HV_Underground_Cable_11_style.js"></script><script src="styles/Combined_LV_Cable_Other_GPS_12_style.js"></script><script src="styles/Combined_LV_Distribution_Cable_GPS_13_style.js"></script><script src="styles/Combined_LV_Service_Cable_GPS_14_style.js"></script><script src="styles/Combined_LV_Underground_Cable_15_style.js"></script><script src="styles/Combined_SubTrans_Cable_GPS_16_style.js"></script><script src="styles/Combined_Distribution_Box_GPS_17_style.js"></script><script src="styles/Combined_Poles_18_style.js"></script><script src="styles/Combined_Transformer_GPS_19_style.js"></script><script src="styles/Water_Supply_Pipe_20_style.js"></script><script src="styles/One_NZ_Undergound_Service_21_style.js"></script><script src="styles/TuatahiFirstFibre_22_style.js"></script><script src="styles/ChorusUndergroundDuct_23_style.js"></script><script src="styles/WaihiTaurangaBuildsections_NZTM_24_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
